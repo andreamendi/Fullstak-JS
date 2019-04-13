@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import InfoForms from './InfoForm';
 
 class App extends Component {
   constructor(){
@@ -24,8 +25,8 @@ class App extends Component {
       .then((response) => {
         // console.log(response);
         this.setState({
-          name: response[0].nombre,
-          lastName: response[0].apellido
+          name: response[2].nombre,
+          lastName: response[2].apellido
 
         });
       })
@@ -43,10 +44,12 @@ class App extends Component {
           </p>
           <h2>Mi nombre es: {this.state.name}</h2>
           <h3>y mi apellido es: {this.state.lastName}</h3>
+          <InfoForms />
           <p>EL nombre y el apellido los traemos desde mi api</p>
               
           
         </header>
+        
       </div>
     );
   }
