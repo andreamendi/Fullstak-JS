@@ -3,7 +3,9 @@ const router = express.Router();
 const info = require('./info');
 const cors = require('cors');
 
+
 router.use(cors());
+router.use(express.json());
 
 //Todas las peticiones de cualquier tipo, se le muestra un json.
 router.all('/', (req, res) =>{

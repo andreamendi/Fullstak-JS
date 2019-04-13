@@ -3,4 +3,4 @@
         "url": "http://localhost:8000",
         "mongo": "mongodb://andrea:dev123@pagina-personal-shard-00-00-xewes.gcp.mongodb.net:27017,pagina-personal-shard-00-01-xewes.gcp.mongodb.net:27017,pagina-personal-shard-00-02-xewes.gcp.mongodb.net:27017/personal?ssl=true&replicaSet=pagina-personal-shard-0&authSource=admin&retryWrites=true"
     }
-}Investigación de operaciones
+}

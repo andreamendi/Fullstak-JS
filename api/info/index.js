@@ -1,18 +1,14 @@
 const express = require('express');
 const router = express.Router();
-const Info = require('../models/info.js');
+const getInfo = require('./getInfo');
+const createInfo = require('./createInfo');
 
-router.get('/', (req, res) =>{
-    Info.find()
-    .then(info => {
-        res.status(200).json(info) //Lo que encontro en la DB
-    })
-    .catch(err => {
-        res.json({
-            error: err
-        })
-    })
-});
+
+router.get('/', getInfo);
+router.post('/', createInfo);
+
+
+
 
 
 
