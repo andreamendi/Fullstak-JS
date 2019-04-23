@@ -7,7 +7,7 @@ const Info = require('../models/info.js');
 function createInfo(req, res){
     console.log(req.body);
     const newInfo = new Info({
-        nombre: req.body.nombre ,
+        nombre: req.body.nombre,
         apellido: req.body.apellido,
         edad: req.body.edad
     });
